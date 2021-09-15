@@ -1,0 +1,10 @@
+<form [formGroup]="userForm" (ngSubmit)="createNewUser()">
+  <label>nome</label>
+  <input id="nome" type="text" formControlName="nome" />
+  <br />
+  <label>email</label>
+  <input id="email" type="text" formControlName="email" />
+  <br />
+  <button type="submit" [disabled]="!userForm.valid">Registrar</button>
+  <p *ngIf="warning">{{ message }}</p>
+</form>

@@ -1,0 +1,39 @@
+input {
+  margin: 1rem;
+}
+
+label {
+  color: rgb(184, 181, 181);
+  font-size: 2rem;
+}
+
+button {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  background-color: orange;
+  color: white;
+}
+
+button:hover {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  background-color: green;
+  color: white;
+}
+
+button:focus {
+  width: 16rem;
+  height: 5rem;
+  font-size: 2rem;
+  color: white;
+  background-color: red;
+}
+
+form {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: bisque;
+  width: fit-content;
+}

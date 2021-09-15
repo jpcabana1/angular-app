@@ -1,0 +1,21 @@
+<div>
+  <table class="center">
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+      <th>email</th>
+    </tr>
+    <tr *ngFor="let user of users">
+      <td>
+        <b>{{ user.id }}</b>
+      </td>
+      <td>
+        <b>{{ user.nome }}</b>
+      </td>
+      <td>
+        <b>{{ user.email }}</b>
+      </td>
+    </tr>
+  </table>
+</div>
+<p *ngIf="error" class="error">{{ error | json }}</p>
